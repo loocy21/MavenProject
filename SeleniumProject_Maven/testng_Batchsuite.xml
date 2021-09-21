@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listeners class-name="com.crm.autodesk.Utils"></listeners>
+</listeners>
+<parameter name = "BROWSER" value = "chrome" />
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.crm.PurchaseOrderApproved.TC_03_PurchaseOrder_Delivered"/>
+      <class name="com.crm.PurchaseOrderApproved.TC_05_PucOrd_ReceivedShipment"/>
+      <class name="com.crm.PurchaseOrderApproved.TC_04_PurchaseOrder_Cancelled"/>
+      <class name="com.crm.PurchaseOrderApproved.TC_02_PurchaseOrder_created"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
